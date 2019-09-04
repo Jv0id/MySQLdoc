@@ -1,12 +1,12 @@
->±¾²¿·ÖÄÚÈÝÀ´Ô´Óë¡¶´ÓMySQLÌØÐÔË¼¿¼ÓÅ»¯¡·ÕâÒ»ÍøÂçÎÄµµ
+### æœ¬éƒ¨åˆ†å†…å®¹æ¥æºä¸Žã€Šä»ŽMySQLç‰¹æ€§æ€è€ƒä¼˜åŒ–ã€‹è¿™ä¸€ç½‘ç»œæ–‡æ¡£
 
-IN²Ù×÷ÓÅ»¯
+INæ“ä½œä¼˜åŒ–
 ======
-- INºóÃæÖ»ÄÜ½Ó³£Á¿£¬ÇÒ×î¶à²»³¬¹ý200¸ö
-- INºóÃæ²»ÄÜ½Ó×Ó²éÑ¯
+- INåŽé¢åªèƒ½æŽ¥å¸¸é‡ï¼Œä¸”æœ€å¤šä¸è¶…è¿‡200ä¸ª
+- INåŽé¢ä¸èƒ½æŽ¥å­æŸ¥è¯¢
 
 ```sql
 select * from tb1 where tb1.id in (select id from tb2 where tb2.c1...)
-// ÓÅ»¯ºó£º
+// ä¼˜åŒ–åŽï¼š
 select tb1.* from tb1, (select id from tb2 where tb2.c1...)t where tb1.id = t.id;
 ```
